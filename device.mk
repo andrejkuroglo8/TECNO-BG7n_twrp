@@ -55,6 +55,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
