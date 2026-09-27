@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2025 The Android Open Source Project
-# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2026 andrejkuroglo8 aka andrewsinay28
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -41,11 +41,18 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl.recovery
 
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl \
+	update_engine_client
+ 
+# Fastbootd
 PRODUCT_PACKAGES += \
-    bootctrl.mt6765
+    android.hardware.fastboot@1.0-impl-mock \
+    fastbootd
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -53,3 +60,17 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+# Health Hal
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
+# Update engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
