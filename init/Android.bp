@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libinit_TECNO-BG7n",
+    name: "libinit_BG7n",
     header_libs: [
         "libbase_headers",
     ],
