@@ -158,7 +158,7 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP    := true
 TW_INCLUDE_LPTOOLS      := true
 TW_EXCLUDE_LPDUMP       := true
-TW_INCLUDE_APEX         := true
+TW_EXCLUDE_APEX         := true
 
 # Display
 TW_NO_SCREEN_BLANK := true
