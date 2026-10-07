@@ -13,7 +13,7 @@
 # Firmware
 /dtbo			emmc		/dev/block/by-name/dtbo											flags=display=dtbo;slotselect;backup;flashimg
 /metadata		ext4		/dev/block/by-name/metadata										flags=display=metadata;backup
-/misc			emmc		/dev/block/by-name/misc											flags=display=misc;backup
+/misc			emmc		/dev/block/by-name/para											flags=display=misc;backup
 
 # Sensitive Data
 /nvcfg			ext4		/dev/block/by-name/nvcfg										flags=display=nvcfg;backup
