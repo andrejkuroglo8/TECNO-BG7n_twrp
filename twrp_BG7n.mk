@@ -6,7 +6,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/tecno/KL5/device.mk)
+$(call inherit-product, device/tecno/BG7n/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
