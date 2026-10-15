@@ -9,7 +9,7 @@ DEVICE_PATH := device/tecno/BG7n
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
-BUILD_BROKEN_DUP_RULES                       := true
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Architecture
@@ -139,6 +139,9 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # twrp configuration
+TW_EXCLUDE_APEX := true
+TW_EXCLUDE_LPDUMP := true
+TW_NO_FLASH_CURRENT_TWRP := true
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES    := true
 TARGET_USES_MKE2FS    := true
