@@ -10,3 +10,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     twrp_BG7n-eng
+    twrp_BG7n-user
+    twrp_BG7n-userdebug
