@@ -10,8 +10,8 @@ $(call inherit-product, device/tecno/BG7n/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Inherit from TECNO-BG7n device
-$(call inherit-product, device/tecno/BG7n/device.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := BG7n
 PRODUCT_NAME := twrp_BG7n
