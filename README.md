@@ -18,7 +18,7 @@ Blocking checks
 - [x] ADB
 
 Medium checks
-- [ ] update.zip sideload
+- [x] update.zip sideload
 - [x] UI colors (red/blue inversions)
 - [x] Screen goes off and on
 - [x] F2FS/EXT4 Support, exFAT/NTFS where supported
