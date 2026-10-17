@@ -1,4 +1,4 @@
-# TWRP device tree for TECNO Spark 20c (TECNO-BG7n)
+# PBRP device tree for TECNO Spark 20c (TECNO-BG7n)
 
 ```
 #
